@@ -1,0 +1,52 @@
+*{margin:0; /* browser har ''naturligt'' padding/ margin, här tar jag bort detta */
+    padding: 0;}
+    
+    
+    header{
+        background-color: rgb(255, 0, 0); 
+        font-family: 'Bree Serif', serif;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Lobster', cursive;
+    }
+    
+     h1 { display: flex;
+      flex-direction: column;
+      text-align: center;
+      text-shadow: 2px 2px rgb(145, 255, 0); /* ger texten en skugga */
+      font-size: 3em; /* storleken på texten, em är ett annat typ av mått */
+      font-family: 'Bree Serif', serif;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Lobster', cursive;
+     /*height: 35vw; */
+    
+    } 
+    
+    
+    section{
+        background-color: rgb(0, 255, 238); /* bakgrunds färg */
+        padding: 20px;
+    }
+    
+    
+    footer{
+        background-color: rgb(0, 13, 255);
+        padding: 20px;
+        font-family: 'Bree Serif', serif;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Lobster', cursive;
+    }
+    
+    
+    p {
+      font-family: 'Bree Serif', serif;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Lobster', cursive;
+    }
+    
+    
+    
+    
+    
+    
+    
+    

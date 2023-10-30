@@ -3,7 +3,7 @@
     display: grid; /* definierar att detta ska vara ett grid */
     grid-gap: 4px; /* hur stort avståndet mellan de olika delara är */
     grid-template-columns: repeat(12, 1fr);  /* mängden columner, alla är en 12:e del */
-    grid-template-rows: 50px 450px auto auto; /*hur stora kolumnerna är*/
+    grid-template-rows: auto; /*hur stora kolumnerna är*/
     padding: 5px; 
   
   }
@@ -18,14 +18,14 @@
  
   
 section{                    /* Denna skapar strukturen för allt under rubruk och meny men över fottern*/
-  grid-column: 2 / 12; /* 1/ -1 */ 
+  grid-column: 1 / -1; /* 2 /12 */ 
    grid-row: 3/4 ;
    flex-direction: column; 
     }
 
 
     footer{
-      grid-column: 2 / 12; /* 1/ -1 */ 
+      grid-column: 1 / -1; /* 2/ 12 */ 
       grid-row: 5/6; 
     }
 
@@ -35,38 +35,5 @@ section{                    /* Denna skapar strukturen för allt under rubruk oc
     }
   
     
-#main{
-  grid-column: 1 / 3 ;
-  grid-row: 3 / 4 ;
-}
 
 
-
-    @media  screen and (max-width: 760px) { /* när skärmen blir mindre än 760px bred så ska mitt grid ändras till det nedan */
-      header{                   /* gör Rubrikens utformning*/
-        grid-column: 1 / -1;
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        grid-row: 1 / 2 ;
-        }
-     
-      
-    section{                    /* Denna sklapar strukturen för allt under rubruk och meny men över fottern*/
-      grid-column: 1 / -1; /* 4/ -1 */ 
-       grid-row: 3 / 4 ;
-       flex-direction: column; 
-        }
-
-    
-        footer{
-          grid-column: 1 / -1; /* 4/ -1 */ 
-          grid-row: 5/6; 
-        }
-
-        #navbar a {
-          display: none; /* genom detta SÅ gömmer jag min navbar i toppen av sidan*/
-        }
-
-  
-    }
